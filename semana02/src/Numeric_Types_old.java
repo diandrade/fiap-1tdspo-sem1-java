@@ -1,4 +1,4 @@
-public class Numeric_Types {
+public class TiposNumericos {
     public static void main(String[] args) {
 
 //      Tipos primitivos
@@ -33,6 +33,34 @@ public class Numeric_Types {
         double maxDoubleValue = 1.7976931348623157E308;
 
         System.out.println("Double Value vai de " + minDoubleValue + " até " + maxDoubleValue);
+
+        //Tipo lógico
+        boolean valorLogicoPositivo = true;
+        boolean valorLogicoNegativo = false;
+
+        System.out.println("Boolean value pode ser " + valorLogicoNegativo + " ou " + valorLogicoPositivo);
+
+        //Tipo caractere
+        char minCharValue = 0; //16 bits
+
+        // Tipos não primitivos ou tipos de referência
+        //String
+        String nome = "João";
+
+        System.out.println("Nome: " + nome);
+        System.out.println("Nome: " + nome.toUpperCase());
+        System.out.println("Nome: " + nome.toLowerCase());
+
+        // Números inteiros
+
+        Integer idade = 18;
+
+        Long idadeLong = 18L;
+
+        Double altura = 1.75;
+
+        Float alturaFloat = 1.75f;
+
     }
 }
 
