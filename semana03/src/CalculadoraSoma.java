@@ -20,8 +20,6 @@ public class CalculadoraSoma {
 
         System.out.println("O resultado da soma " + num1 + " + " + num2 + " é igual a " + resultado);
 
-
-
         scanner.close();
     }
 }
