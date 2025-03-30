@@ -148,7 +148,7 @@ public class Exercicios {
         double media = (nota1+nota2)/2;
 
         if (media <= 4){
-            System.out.println("Reprovadi");
+            System.out.println("Reprovado");
         }else if (media <= 7){
             System.out.println("Exame");
         }else{
