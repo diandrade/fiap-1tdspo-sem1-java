@@ -16,9 +16,11 @@ public class exercicio02 {
         int terceiroValor = scanner.nextInt();
 
         if (primeiroValor > segundoValor && primeiroValor > terceiroValor){
-            System.out.println(primeiroValor + "," + segundoValor + "," + terceiroValor);
-        } else if (segundoValor > terceiroValor) {
-            System.out.println("Treinar em casa.");
+            System.out.println("O primeiro valor é maior que os outros dois valores.");
+        } else if (segundoValor > primeiroValor && segundoValor > terceiroValor){
+            System.out.println("O segundo valor é maior que os outros dois valores.");
+        }else {
+            System.out.println("O terceiro valor é maior que os outros dois valores.");
         }
         scanner.close();
     }

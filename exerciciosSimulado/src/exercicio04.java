@@ -4,18 +4,41 @@ import java.util.Scanner;
 
 public class exercicio04 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual termo você deseja visualizar (N)? ");
+        int termo = scanner.nextInt();
+        if (termo <= 0) {
+            System.out.println("Insira um valor positivo.");
+        } else {
+            fibonacci(termo);
+        }
+        scanner.close();
+    }
 
-        int primeiroTermo = 1;
+    public static void fibonacci(int n) {
+        int primeiroTermo = 0;
         int segundoTermo = 1;
-
         int contador = 0;
+        int subtracao;
 
-        while (contador <= 17) {
+        if (n % 2 == 1) {
+            subtracao = 1;
+        } else {
+            subtracao = 2;
+        }
+
+        int limiteContador = n / 2 - subtracao;
+
+        while (contador <= limiteContador) {
             primeiroTermo += segundoTermo;
-            System.out.println(primeiroTermo + " (Primeiro Termo)");
-            System.out.println(segundoTermo + " (Segundo Termo)");
+            segundoTermo += primeiroTermo;
             contador++;
         }
-        System.out.println("O décimo sétimo termo da sequência de fibonacci é: " + primeiroTermo);
+
+        if (n % 2 == 1) {
+            System.out.println("O " + n + "º termo da sequência de fibonacci é: " + primeiroTermo);
+        } else {
+            System.out.println("O " + n + "º termo da sequência de fibonacci é: " + segundoTermo);
+        }
     }
 }
