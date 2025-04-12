@@ -1,8 +1,9 @@
 public class StaticSample {
 
-    public int contagemTotal = 0;
+    public static int contagemTotal = 0;
 
-    public void addOne(){
+    public static void addOne(){
         contagemTotal++;
     }
+
 }
